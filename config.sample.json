@@ -1,0 +1,41 @@
+{
+  "freshbooks": {
+    "clientId": "YOUR_FRESHBOOKS_CLIENT_ID",
+    "clientSecret": "YOUR_FRESHBOOKS_CLIENT_SECRET",
+    "accessToken": "YOUR_FRESHBOOKS_ACCESS_TOKEN",
+    "refreshToken": "YOUR_FRESHBOOKS_REFRESH_TOKEN",
+    "accountId": "YOUR_FRESHBOOKS_ACCOUNT_ID"
+  },
+  "zoho": {
+    "clientId": "YOUR_ZOHO_CLIENT_ID",
+    "clientSecret": "YOUR_ZOHO_CLIENT_SECRET",
+    "accessToken": "YOUR_ZOHO_ACCESS_TOKEN",
+    "refreshToken": "YOUR_ZOHO_REFRESH_TOKEN",
+    "organizationId": "YOUR_ZOHO_ORGANIZATION_ID",
+    "region": "com"
+  },
+  "categoryMapping": {
+    "categories": [
+      { "name": "Marketing", "children": ["Advertising", "Design"] },
+      { "name": "Travel", "children": ["Lodging", "Transportation", "Meals"] },
+      { "name": "Office", "children": ["Supplies", "Equipment", "Software"] }
+    ],
+    "mapping": {
+      "FreshBooks Category Name": "Zoho Category Name",
+      "Bank Charges & Fees": "Bank Fees"
+    }
+  },
+  "paidThroughMapping": {
+    "Old Card Name": "New Card Name",
+    "Personal Card": "Business Card"
+  },
+  "depositAccountMapping": {
+    "stripe": "Checking",
+    "paypal": "PayPal",
+    "check": "Checking",
+    "default": "Checking"
+  },
+  "manualCustomerMapping": {
+    "12345": "Customer Name for archived FB client"
+  }
+}
